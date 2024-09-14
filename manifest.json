@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Textify",
+    "description": "Convert your chats with ChatGPT into a pdf.",
+    "version": "1.0",
+    "icons": {
+        "16": "images/16by16.png",
+        "32": "images/32by32.png",
+        "48": "images/48by48.png",
+        "128": "images/128by128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/16by16.png",
+            "32": "images/32by32.png",
+            "48": "images/48by48.png",
+            "128": "images/128by128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },   
+    "permissions": [
+        "activeTab",
+        "scripting"],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Q",
+                "mac": "Command+Shift+Q"
+            }
+        }
+    }
+}
